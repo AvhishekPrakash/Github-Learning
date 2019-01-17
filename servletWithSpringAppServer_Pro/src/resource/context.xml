@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="tomcat" class="com.xworkz.springComponent.Server">
+<property name="version" value="11"></property>
+</bean>
+
+
+<!-- <bean id="zomcat" class="com.xworkz.springComponent.Application">
+<property name="url" value ="http://www.prakav.com"></property>
+<property name="server" ref ="tomcat"></property>
+</bean> -->
+
+
+ <bean id="clubparty" class="com.xworkz.springComponent.Application">
+<property name="url" value ="http://www.clubparty.com"></property>
+<property name="server" ref ="tomcat"></property>
+</bean>
+ 
+
+</beans>
